@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+puts "Seeding Data"
 a1 = Apartment.create(number: 4109)
 a2 = Apartment.create(number: 1107)
 a3 = Apartment.create(number: 2409)
@@ -28,3 +28,4 @@ Lease.create(apartment_id: a4.id, tenant_id: t4.id, rent: 3200)
 Lease.create(apartment_id: a5.id, tenant_id: t5.id, rent: 4200)
 Lease.create(apartment_id: a3.id, tenant_id: t4.id, rent: 5020)
 Lease.create(apartment_id: a4.id, tenant_id: t1.id, rent: 1100)
+puts "Done Seeding Data"
